@@ -1,6 +1,5 @@
 package com.in28minutes.spring.basics.springin5steps;
 
-import com.in28minutes.spring.basics.springin5steps.xml.XmlPersonDAO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -19,7 +18,7 @@ public class SpringIn5StepsXmlContextApplication {
 		// Application Context
 
 		try (ClassPathXmlApplicationContext applicationContext =
-				new ClassPathXmlApplicationContext("appliactionContext.xml")) {
+				new ClassPathXmlApplicationContext("applicationContext.xml")) {
 
 		    LOGGER.info("Beans Loaded -> {}", (Object)applicationContext.getBeanDefinitionNames());
 		}
